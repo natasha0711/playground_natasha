@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Playground</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="playground.css">
+  <script  src="assets/fontawesome/svg-with-js/js/fa-brands.js"></script>
+  <script  src="assets/fontawesome/svg-with-js/js/fa-solid.js"></script>
+  <script  src="assets/fontawesome/svg-with-js/js/fontawesome.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="playground.js"></script>
+</head>
+<div id="overlay" onclick="off()">
+  <section>
+          
+    <div class="CSSgal">
+      <s id="s1"></s> 
+      <s id="s2"></s>
+      <s id="s3"></s>
+      <s id="s4"></s>
+    
+      <div class="slider">
+        <div style="background-image: url('assets/images/banner-we-are.jpg');">
+          <h2>we are</h2>
+          <p>Consectetur adipiscing elit.<br>
+            Nulla condimentum tortor sem.</p>
+            <div class="players" ><a href="playground.html#weare">THE PLAYERS</a></div>
+        </div>
+        <div style="background-image: url('assets/images/banner-we-do.jpg');">
+          <h2>we do</h2>
+          <p>Consectetur adipiscing elit.
+            Nulla condimentum tortor sem.</p>
+            <div class="players" ><a href="playground.html#wedo">THE PROJECTS</a></div>
+        </div>
+        <div style="background-image: url('assets/images/banner-carrers.jpg');">
+          <h2>careers</h2>
+          Consectetur adipiscing elit.
+          Nulla condimentum tortor sem.<br>
+            <div class="players" ><a href="playground.html#car">THE POSITIONS</a></div>
+        </div>
+      </div>
+      
+      <div class="prevNext">
+        <div><a href="playground.html#s4"></a><a href="playground.html#s2"></a></div>
+        <div><a href="playground.html#s1"></a><a href="playground.html#s3"></a></div>
+        <div><a href="playground.html#s2"></a><a href="playground.html#s4"></a></div>
+      </div>
+    
+    </div>
+  </section>
+</div>
+<body onscroll="onScroll()" onload="onInit()" onresize="onResize()">
+  
+        <!-- Navigation-->
+        <nav id="mainNav" class="navbar topnav background nav-horizontal">
+         
+          <img class="play-icon" src="assets\images\logo-playground-white.png">
+                    <ul>
+                        <li ><a  href="playground.html#weare">we are</a></li>
+                        <li><a  href="playground.html#wedo">we do</a></li>
+                        <li ><a  href="playground.html#car">careers</a></li>
+                        <li ><a  href="playground.html#contactus">contact us</a></li>
+                        <li ><a  href="playground.html#arcade">arcade</a></li>
+                      
+                    </ul>
+                    <button class="apri" onclick="onOpen()">&raquo;</button><br>
+                      
+        </nav>
+        <nav  class="responsive-menu">
+          <img class="play-icon" src="assets\images\logo-playground-white.png"><br>
+          <button class="chiudi" onclick="onClose()">&laquo;</button>
+          <div class="col-9">
+                    <ul>
+                        <li ><a  href="playground.html#weare">we are</a></li>
+                        <li><a  href="playground.html#wedo">we do</a></li>
+                        <li ><a  href="playground.html#car">careers</a></li>
+                        <li ><a  href="playground.html#contactus">contact us</a></li>
+                        <li ><a  href="playground.html#arcade">arcade</a></li>
+                        
+                    </ul>
+                  </div>
+                    
+                  
+                      
+        </nav>
+        <section>
+          
+          <div class="CSSgal">
+            <s id="s1"></s> 
+            <s id="s2"></s>
+            <s id="s3"></s>
+            <s id="s4"></s>
+          
+            <div class="slider">
+              <div style="background-image: url('assets/images/banner-we-are.jpg');">
+                <h2>we are</h2>
+                <p>Consectetur adipiscing elit.<br>
+                  Nulla condimentum tortor sem.</p>
+                  <div class="players" ><a href="playground.html#weare">THE PLAYERS</a></div>
+              </div>
+              <div style="background-image: url('assets/images/banner-we-do.jpg');">
+                <h2>we do</h2>
+                <p>Consectetur adipiscing elit.
+                  Nulla condimentum tortor sem.</p>
+                  <div class="players" ><a href="playground.html#wedo">THE PROJECTS</a></div>
+              </div>
+              <div style="background-image: url('assets/images/banner-carrers.jpg');">
+                <h2>careers</h2>
+                Consectetur adipiscing elit.
+                Nulla condimentum tortor sem.<br>
+                  <div class="players" ><a href="playground.html#car">THE POSITIONS</a></div>
+              </div>
+            </div>
+            
+            <div class="prevNext">
+              <div><a href="playground.html#s4"></a><a href="playground.html#s2"></a></div>
+              <div><a href="playground.html#s1"></a><a href="playground.html#s3"></a></div>
+              <div><a href="playground.html#s2"></a><a href="playground.html#s4"></a></div>
+            </div>
+          
+          </div>
+        </section>
+        <section  id="weare" class="weare"></section>
+          <h2>
+            <span class="move-careers">
+              <div class="line-careers stecchetta" style="margin-left: 100px;"></div>
+              <span class="we">we</span><span class="do"><span>are</span>
+              </span>
+            </span>
+          </h2>
+        
+        <input type="radio" id="s-1" name="slider-control" checked="checked">
+<input type="radio" id="s-2" name="slider-control">
+<input type="radio" id="s-3" name="slider-control">
+<div class="js-slider">
+  <figure class="js-slider_item img-1">
+    <div class="js-slider_img">
+      <img class="c-img-w-full" src="assets/images/slide-circle.jpg" alt="">
+    </div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">
+        <div class="c-label">playground</div>
+        <br class="view-sm mb-s">Lorem ipsum.</h3>
+      
+    </figcaption>
+  </figure>
+  <figure class="js-slider_item img-2">
+    <div class="js-slider_img">
+      <img class="c-img-w-full" src="assets/images/slide-play.jpg" alt="">
+    </div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">
+        <div class="c-label">playground</div>
+        <br class="view-sm mb-s">Consectetur adipiscing elit.</h3>
+    </figcaption>
+  </figure>
+  <figure class="js-slider_item img-3">
+    <div class="js-slider_img">
+      <img class="c-img-w-full" src="assets/images/slide-hello.jpg" alt="">
+    </div>
+    <figcaption class="wo-caption">
+      <h3 class="wo-h3">
+        <div class="c-label">playground</div>
+        <br class="view-sm mb-s">Nulla condimentum tortor sem,
+        in semper nisl bibendum eu.</h3>
+  </figure>
+  <div class="js-slider_nav">
+    <label class="js-slider_nav_item s-nav-1 prev" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-1 next" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-2 prev" for="s-1"></label>
+    <label class="js-slider_nav_item s-nav-2 next" for="s-3"></label>
+    <label class="js-slider_nav_item s-nav-3 prev" for="s-2"></label>
+    <label class="js-slider_nav_item s-nav-3 next" for="s-1"></label>
+  </div>
+  <div class="js-slider_indicator">
+    <div class="js-slider-indi indi-1"></div>
+    <div class="js-slider-indi indi-2"></div>
+    <div class="js-slider-indi indi-3"></div>
+  </div>
+</div>
+        <section  id="wedo" class="wedo"></section>
+        <section>
+            
+            <h2 >
+              <span class="move">
+                <div class="line stecchetta"></div>
+                    <span class="we">we</span><span class="do">do</span>
+              </span>
+            </h2>
+          <div class="card">
+            <ul class="cards">
+              <li class=" col-3 card-margin" >
+                <div class="card">
+                  <div class="card_image"><img src="assets\images\card-innovation.png"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">INNOVATION</h2>
+                    <p class="card_text">Suspendisse vehicula, lectus sed molestie aliquam, arcu neque gravida lacus.</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class=" col-3 card-margin">
+                <div class="card">
+                  <div class="card_image"><img src="assets\images\card-play-harder.png"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">PLAY HARDER</h2>
+                    <p class="card_text">Aenean mollis dolor a mattis viverra. In hac habitasse platea dictumst. Curabitur tempus dui tortor, et bibendum lacus eleifend ut.
+                    </p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+              <li class=" col-3 card-margin">
+                <div class="card">
+                  <div class="card_image"><img src="assets\images\card-simplicity.png"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">SIMPLICITY</h2>
+                    <p class="card_text">Donec vitae augue tellus. Proin et urna sit amet metus fermentum dapibus non quis urna.</p>
+                    <button class="btn card_btn">Read More</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="car"></section>
+        <section  id="careers" class="career">
+          <h2>
+            <span class="move-careers">
+              <div class="line-careers stecchetta"></div>
+                  <span class="careers">careers</span>
+            </span>
+          </h2>
+          <div class="tabbed col-12">
+          </div>
+        </section>
+        <section id="contactus" class="wedo"></section>
+        <section>
+          <div class="col-10">
+          <h2 >
+            <span class="move">
+              <div class="line-contact-us stecchetta"></div>
+                  <span class="we">contact</span>
+                <span class="do">
+                  <span>us</span>
+                </span>
+            </span>
+          </h2>
+        </div>
+        <div class="signupSection">
+          <div class="info">
+           
+            <div style="height: 300px;">
+          <img src="assets/images/1.jpg" width="400">
+          </div>
+            <pre>
+              Playground srl 
+              Via G. Mazzini 3/C, 
+              Cernusco Sul Naviglio (Milano)
+              -
+            T +39 0240706003</pre>
+            
+          </div>
+          <form action="#" method="POST" class="signupForm" name="signupform">
+            <ul class="noBullet">
+              <li>
+                <label for="name"></label>
+                <input type="text" class="inputFields" id="username" name="username" placeholder="Name" value="" oninput="return userNameValidation(this.value)" />
+              </li>
+              <li>
+                <label for="lastName"></label>
+                <input type="lastName" class="inputFields" id="lastName" name="lastName" placeholder="Last name" value="" oninput="return passwordValidation(this.value)" />
+              </li>
+              <li>
+                <label for="email"></label>
+                <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+              </li>
+              <li>
+                <div style="height: 250px;margin:0">
+                <label for="message"></label>
+                <textarea type="text" class="inputFields" id="message" name="message" placeholder="Message" value="" required></textarea>
+              </div>
+              </li>
+              <li id="center-btn">
+                <input type="submit" id="join-btn" name="join" alt="Join" value="SEND">
+              </li>
+            </ul>
+          </form>
+        </div>
+        </section>
+    <section  id="arcade" class="career">
+      <h2>
+        <span class="move-careers">
+          <div class="line-careers stecchetta"></div>
+              <span class="careers">arcade</span>
+        </span>
+      </h2>
+    </section>
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+</body>
+<footer class="footer cards normal">
+    <div class="col-3">
+      <img class="ddf01" src="assets\images\logo-playground-white.png">
+    </div>
+    <div class="col-3 stecchina scritta">
+      Playground srl 
+      Via G. Mazzini 3/C, 
+      Cernusco Sul Naviglio (Milano)
+    </div>
+    
+    <div class="col-3 stecchina scritta">
+      T +39 0240706003
+    </div>
+    <div class="col-3 ">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fab fa-dribbble fa-3x"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fab fa-linkedin fa-3x"></i></a></li>   
+        </ul>
+    </div>
+</footer>
+<footer class="footer cards responsive-footer">
+  Playground srl 
+    Via G. Mazzini 3/C, 
+    Cernusco Sul Naviglio (Milano)
+    T +39 0240706003
+    <img class="ddf01" src="assets\images\logo-playground-white.png">
+  
+</footer>
+<div class="cookieConsentContainer" id="cookieConsentContainer">
+  <div class="cookieTitle">
+    Cookies. <img src="assets/images/cookie.png" width="25px" height="25px">
+  </div>
+  <div class="cookieDesc">
+    <p>Our website uses cookies to improve your experience. To find out more about the cookies we use please see our <a>Cookies Policy.</a> </p></div>
+    <div class="cookieButton"><a onclick="purecookieDismiss();">OK</a></div>
+  </div>
+</html>
